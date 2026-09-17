@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sistema de Prevención frente a Desastres Naturales</title>
+
+    <link rel="stylesheet" href="estilo.css">
+
+</head>
+
+
+<body>
+
+
+<!-- =====================================
+     PORTADA
+     ===================================== -->
+
+<section id="portada" class="portada">
+
+    <div class="portada-contenido">
+
+        <div class="icono-principal">
+            🛡️
+        </div>
+
+        <p class="etiqueta">
+            FERIA CIENTÍFICA 2026
+        </p>
+
+        <h1>
+            Sistema de Prevención
+            <br>
+            <span>frente a Desastres Naturales</span>
+        </h1>
+
+        <p class="descripcion-portada">
+
+            Una herramienta tecnológica creada como apoyo
+            para las personas frente a situaciones de
+            desastres naturales y emergencias.
+
+        </p>
+
+        <button
+            class="boton-entrada"
+            onclick="entrarAlSistema()">
+
+            CLIC AQUÍ
+            <span>→</span>
+
+        </button>
+
+        <p class="texto-ayuda">
+            Ingresa para conocer la situación a tu alrededor
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     SISTEMA
+     ===================================== -->
+
+<div id="sistema" class="sistema">
+
+
+<!-- =====================================
+     MENÚ
+     ===================================== -->
+
+<nav>
+
+    <div class="logo">
+        🛡️ PREVENCIÓN
+    </div>
+
+    <div class="menu">
+
+        <a href="#inicio">
+            Inicio
+        </a>
+
+        <a href="#entorno">
+            Mi entorno
+        </a>
+
+        <a href="#riesgos">
+            Riesgos
+        </a>
+
+        <a href="#quehacer">
+            ¿Qué hacer?
+        </a>
+
+        <a href="#emergencia">
+            Emergencia
+        </a>
+
+    </div>
+
+</nav>
+
+
+
+<main>
+
+
+<!-- =====================================
+     INICIO
+     ===================================== -->
+
+<section id="inicio" class="seccion inicio">
+
+    <div class="texto-inicio">
+
+        <p class="etiqueta">
+            SISTEMA DE PREVENCIÓN
+        </p>
+
+        <h2>
+            Información para
+            <br>
+            actuar a tiempo.
+        </h2>
+
+        <p>
+
+            Nuestro sistema busca entregar información
+            útil para ayudar a las personas a reconocer
+            posibles situaciones de riesgo y actuar de
+            manera rápida y responsable.
+
+        </p>
+
+        <a
+            href="#entorno"
+            class="boton-secundario">
+
+            Ver mi entorno →
+
+        </a>
+
+    </div>
+
+
+    <div class="tarjeta-estado">
+
+        <div class="estado-punto"></div>
+
+        <span>
+            SISTEMA ACTIVO
+        </span>
+
+        <strong>
+            Monitoreando
+        </strong>
+
+        <p>
+
+            Preparado para analizar información
+            y mostrar condiciones del entorno.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     MI ENTORNO
+     ===================================== -->
+
+<section id="entorno" class="seccion">
+
+    <div class="titulo-seccion">
+
+        <p class="etiqueta">
+            INFORMACIÓN EN TIEMPO REAL
+        </p>
+
+        <h2>
+            ¿Qué está pasando a tu alrededor?
+        </h2>
+
+        <p>
+            Consulta información actual sobre las
+            condiciones del entorno.
+        </p>
+
+    </div>
+
+
+    <div class="informacion-grid">
+
+
+        <div class="info-card">
+
+            <div class="card-icon">
+                🌤️
+            </div>
+
+            <div>
+
+                <span class="card-titulo">
+                    CONDICIONES ACTUALES
+                </span>
+
+                <h3 id="temperatura">
+                    Cargando...
+                </h3>
+
+                <p id="clima">
+                    Consultando información...
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-card">
+
+            <div class="card-icon">
+                📍
+            </div>
+
+            <div>
+
+                <span class="card-titulo">
+                    UBICACIÓN
+                </span>
+
+                <h3>
+                    Chillán
+                </h3>
+
+                <p>
+                    Ubicación de referencia
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-card">
+
+            <div class="card-icon">
+                🕐
+            </div>
+
+            <div>
+
+                <span class="card-titulo">
+                    FECHA Y HORA
+                </span>
+
+                <h3 id="hora">
+                    --:--
+                </h3>
+
+                <p id="fecha">
+                    Cargando fecha...
+                </p>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="info-card">
+
+            <div class="card-icon">
+                📡
+            </div>
+
+            <div>
+
+                <span class="card-titulo">
+                    ESTADO DEL SISTEMA
+                </span>
+
+                <h3 class="estado-ok">
+                    ACTIVO
+                </h3>
+
+                <p>
+                    Información actualizada
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- VISOR OFICIAL -->
+
+    <div class="visor">
+
+        <div class="visor-icono">
+            🗺️
+        </div>
+
+        <div>
+
+            <h3>
+                Consulta tu zona de riesgo
+            </h3>
+
+            <p>
+
+                Revisa el Visor Chile Preparado de
+                SENAPRED para conocer amenazas como
+                tsunamis, incendios forestales y
+                volcanes.
+
+            </p>
+
+            <a
+                href="https://senapred.cl/visor-chile-preparado/"
+                target="_blank"
+                class="boton-web">
+
+                ABRIR VISOR CHILE PREPARADO ↗
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     RIESGOS
+     ===================================== -->
+
+<section id="riesgos" class="seccion">
+
+
+    <div class="titulo-seccion">
+
+        <p class="etiqueta">
+            PREVENCIÓN
+        </p>
+
+        <h2>
+            Evaluación de riesgos
+        </h2>
+
+        <p>
+
+            Selecciona las situaciones que estén
+            ocurriendo para calcular un nivel
+            de riesgo.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="evaluador">
+
+
+        <div class="pregunta">
+
+            <label>
+                🌎 ¿Se ha producido un terremoto?
+            </label>
+
+            <select id="terremoto">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="3">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                🌊 ¿Existe riesgo de tsunami?
+            </label>
+
+            <select id="tsunami">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="4">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                🔥 ¿Existe un incendio forestal?
+            </label>
+
+            <select id="incendio">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="3">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                🌧️ ¿Existe una inundación?
+            </label>
+
+            <select id="inundacion">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="2">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                🌋 ¿Existe actividad volcánica?
+            </label>
+
+            <select id="volcan">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="4">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                🪨 ¿Existe riesgo de derrumbe?
+            </label>
+
+            <select id="derrumbe">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="3">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                🌪️ ¿Hay vientos fuertes?
+            </label>
+
+            <select id="viento">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="2">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                ⛈️ ¿Existe una tormenta eléctrica?
+            </label>
+
+            <select id="tormenta">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="2">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <div class="pregunta">
+
+            <label>
+                🌡️ ¿Existen temperaturas extremas?
+            </label>
+
+            <select id="temperaturaRiesgo">
+
+                <option value="0">
+                    No
+                </option>
+
+                <option value="2">
+                    Sí
+                </option>
+
+            </select>
+
+        </div>
+
+
+
+        <button
+            class="boton-analizar"
+            onclick="analizarRiesgo()">
+
+            🔎 ANALIZAR RIESGO
+
+        </button>
+
+
+
+        <!-- SEMÁFORO -->
+
+        <div class="semaforo">
+
+            <h3>
+                NIVEL DE RIESGO
+            </h3>
+
+            <div class="luces">
+
+                <div
+                    id="luzVerde"
+                    class="luz verde">
+                </div>
+
+                <div
+                    id="luzAmarilla"
+                    class="luz amarilla">
+                </div>
+
+                <div
+                    id="luzNaranja"
+                    class="luz naranja">
+                </div>
+
+                <div
+                    id="luzRoja"
+                    class="luz roja">
+                </div>
+
+                <div
+                    id="luzNegra"
+                    class="luz negra">
+                </div>
+
+            </div>
+
+            <p id="textoSemaforo">
+                Esperando análisis...
+            </p>
+
+        </div>
+
+
+
+        <!-- RESULTADO -->
+
+        <div
+            id="resultado"
+            class="resultado">
+
+            <span>
+                Esperando análisis...
+            </span>
+
+        </div>
+
+
+
+        <!-- FACTORES DETECTADOS -->
+
+        <div
+            id="factores"
+            class="factores">
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     ¿QUÉ HACER?
+     ===================================== -->
+
+<section
+    id="quehacer"
+    class="seccion quehacer">
+
+
+    <div class="titulo-seccion">
+
+        <p class="etiqueta">
+            PREPARACIÓN
+        </p>
+
+        <h2>
+            ¿Qué hacer frente a un desastre?
+        </h2>
+
+        <p>
+
+            Conoce recomendaciones oficiales
+            para actuar de manera segura.
+
+        </p>
+
+    </div>
+
+
+
+    <div class="acciones-grid">
+
+
+        <div class="accion-card">
+
+            <div class="accion-icono">
+                🌎
+            </div>
+
+            <h3>
+                Terremoto
+            </h3>
+
+            <p>
+
+                Protégete, aléjate de ventanas
+                y sigue las instrucciones de
+                las autoridades.
+
+            </p>
+
+            <a
+                href="https://www.senapred.cl/recomendaciones/"
+                target="_blank">
+
+                Ver recomendaciones ↗
+
+            </a>
+
+        </div>
+
+
+
+        <div class="accion-card">
+
+            <div class="accion-icono">
+                🌊
+            </div>
+
+            <h3>
+                Tsunami
+            </h3>
+
+            <p>
+
+                Si estás en una zona de evacuación,
+                dirígete inmediatamente hacia terrenos
+                elevados o zonas de seguridad.
+
+            </p>
+
+            <a
+                href="https://senapred.cl/tsunami/"
+                target="_blank">
+
+                Ver recomendaciones ↗
+
+            </a>
+
+        </div>
+
+
+
+        <div class="accion-card">
+
+            <div class="accion-icono">
+                🔥
+            </div>
+
+            <h3>
+                Incendio forestal
+            </h3>
+
+            <p>
+
+                Aléjate del fuego y del humo,
+                evacúa cuando las autoridades
+                lo indiquen y mantente informado.
+
+            </p>
+
+            <a
+                href="https://senapred.cl/incendios-forestales/"
+                target="_blank">
+
+                Ver recomendaciones ↗
+
+            </a>
+
+        </div>
+
+
+
+        <div class="accion-card">
+
+            <div class="accion-icono">
+                🌧️
+            </div>
+
+            <h3>
+                Inundación
+            </h3>
+
+            <p>
+
+                Evita zonas inundadas y sigue
+                las instrucciones de evacuación
+                de las autoridades.
+
+            </p>
+
+            <a
+                href="https://senapred.cl/inundaciones/"
+                target="_blank">
+
+                Ver recomendaciones ↗
+
+            </a>
+
+        </div>
+
+
+
+        <div class="accion-card">
+
+            <div class="accion-icono">
+                🌋
+            </div>
+
+            <h3>
+                Erupción volcánica
+            </h3>
+
+            <p>
+
+                Mantente informado, prepara
+                una evacuación y sigue las
+                indicaciones oficiales.
+
+            </p>
+
+            <a
+                href="https://www.senapred.cl/recomendaciones/"
+                target="_blank">
+
+                Ver recomendaciones ↗
+
+            </a>
+
+        </div>
+
+
+
+        <div class="accion-card">
+
+            <div class="accion-icono">
+                🪨
+            </div>
+
+            <h3>
+                Derrumbe
+            </h3>
+
+            <p>
+
+                Aléjate de laderas inestables
+                y zonas donde exista peligro
+                de deslizamientos.
+
+            </p>
+
+            <a
+                href="https://www.senapred.cl/recomendaciones/"
+                target="_blank">
+
+                Ver recomendaciones ↗
+
+            </a>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     EMERGENCIAS
+     ===================================== -->
+
+<section
+    id="emergencia"
+    class="seccion emergencia">
+
+
+    <div class="titulo-seccion">
+
+        <p class="etiqueta">
+            RESPUESTA RÁPIDA
+        </p>
+
+        <h2>
+            Números de emergencia
+        </h2>
+
+        <p>
+            Haz clic para copiar un número.
+        </p>
+
+    </div>
+
+
+
+    <div class="emergencias-grid">
+
+
+        <div
+            class="emergencia-card"
+            onclick="copiarNumero('132', 'Bomberos de Chile')">
+
+            <div class="emergencia-icono">
+                🚒
+            </div>
+
+            <div>
+
+                <span>
+                    BOMBEROS DE CHILE
+                </span>
+
+                <strong>
+                    132
+                </strong>
+
+                <p>
+                    Incendios y rescates
+                </p>
+
+            </div>
+
+            <div class="llamar">
+                📋
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="emergencia-card"
+            onclick="copiarNumero('131', 'SAMU')">
+
+            <div class="emergencia-icono">
+                🚑
+            </div>
+
+            <div>
+
+                <span>
+                    SAMU
+                </span>
+
+                <strong>
+                    131
+                </strong>
+
+                <p>
+                    Emergencias médicas
+                </p>
+
+            </div>
+
+            <div class="llamar">
+                📋
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="emergencia-card"
+            onclick="copiarNumero('133', 'Carabineros de Chile')">
+
+            <div class="emergencia-icono">
+                🚔
+            </div>
+
+            <div>
+
+                <span>
+                    CARABINEROS DE CHILE
+                </span>
+
+                <strong>
+                    133
+                </strong>
+
+                <p>
+                    Emergencias y seguridad
+                </p>
+
+            </div>
+
+            <div class="llamar">
+                📋
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="aviso-emergencia">
+
+        ⚠️ En una emergencia real, prioriza tu seguridad
+        y sigue las instrucciones de las autoridades.
+
+    </div>
+
+
+</section>
+
+
+
+<!-- =====================================
+     OBJETIVO
+     ===================================== -->
+
+<section class="seccion objetivo">
+
+    <div class="titulo-seccion">
+
+        <p class="etiqueta">
+            NUESTRO PROYECTO
+        </p>
+
+        <h2>
+            ¿Cuál es nuestro objetivo?
+        </h2>
+
+    </div>
+
+
+    <div class="objetivo-contenido">
+
+        <div>
+            🧠
+        </div>
+
+        <p>
+
+            El objetivo es utilizar la tecnología
+            como herramienta de apoyo ante desastres
+            naturales, entregando información que
+            permita reconocer posibles riesgos y
+            actuar de manera rápida y responsable.
+
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================
+     AVISO FINAL
+     ===================================== -->
+
+<section class="aviso-final">
+
+    <h2>
+        ⚠️ Importante
+    </h2>
+
+    <p>
+
+        Este sistema es una herramienta educativa
+        de apoyo. No reemplaza las alertas oficiales
+        ni las instrucciones de las autoridades.
+
+    </p>
+
+    <a
+        href="https://www.senapred.cl/"
+        target="_blank">
+
+        Visitar SENAPRED ↗
+
+    </a>
+
+</section>
+
+
+</main>
+
+
+
+<footer>
+
+    <div>
+        🛡️ Sistema de Prevención frente a
+        Desastres Naturales
+    </div>
+
+    <p>
+        Feria Científica 2026
+    </p>
+
+</footer>
+
+
+</div>
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
